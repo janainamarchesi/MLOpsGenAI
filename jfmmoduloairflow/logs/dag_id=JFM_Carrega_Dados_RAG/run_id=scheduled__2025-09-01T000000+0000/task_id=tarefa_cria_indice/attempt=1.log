@@ -1,0 +1,69 @@
+[2025-09-02T01:04:11.772+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-09-02T01:04:11.799+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: JFM_Carrega_Dados_RAG.tarefa_cria_indice scheduled__2025-09-01T00:00:00+00:00 [queued]>
+[2025-09-02T01:04:11.814+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: JFM_Carrega_Dados_RAG.tarefa_cria_indice scheduled__2025-09-01T00:00:00+00:00 [queued]>
+[2025-09-02T01:04:11.815+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-09-02T01:04:11.837+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): tarefa_cria_indice> on 2025-09-01 00:00:00+00:00
+[2025-09-02T01:04:11.853+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'JFM_Carrega_Dados_RAG', 'tarefa_cria_indice', 'scheduled__2025-09-01T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/jfmpipeline.py', '--cfg-path', '/tmp/tmp0uihktp6']
+[2025-09-02T01:04:11.858+0000] {standard_task_runner.py:105} INFO - Job 6: Subtask tarefa_cria_indice
+[2025-09-02T01:04:11.859+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=291) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-09-02T01:04:11.861+0000] {standard_task_runner.py:72} INFO - Started process 293 to run task
+[2025-09-02T01:04:11.948+0000] {task_command.py:467} INFO - Running <TaskInstance: JFM_Carrega_Dados_RAG.tarefa_cria_indice scheduled__2025-09-01T00:00:00+00:00 [running]> on host 97016eb84f12
+[2025-09-02T01:04:12.070+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Data Science Academy' AIRFLOW_CTX_DAG_ID='JFM_Carrega_Dados_RAG' AIRFLOW_CTX_TASK_ID='tarefa_cria_indice' AIRFLOW_CTX_EXECUTION_DATE='2025-09-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-01T00:00:00+00:00'
+[2025-09-02T01:04:12.072+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-09-02T01:04:15.164+0000] {_transport.py:349} INFO - HEAD http://5bb87ccc996e:9200/jfmindex [status:404 duration:3.056s]
+[2025-09-02T01:04:17.453+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:2.287s]
+[2025-09-02T01:04:17.662+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.208s]
+[2025-09-02T01:04:17.700+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.036s]
+[2025-09-02T01:04:17.746+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.041s]
+[2025-09-02T01:04:17.793+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.045s]
+[2025-09-02T01:04:17.843+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.046s]
+[2025-09-02T01:04:17.883+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.038s]
+[2025-09-02T01:04:17.917+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.033s]
+[2025-09-02T01:04:17.951+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.033s]
+[2025-09-02T01:04:17.977+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.023s]
+[2025-09-02T01:04:17.997+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.019s]
+[2025-09-02T01:04:18.020+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.021s]
+[2025-09-02T01:04:18.037+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.015s]
+[2025-09-02T01:04:18.058+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.020s]
+[2025-09-02T01:04:18.091+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.031s]
+[2025-09-02T01:04:18.157+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.065s]
+[2025-09-02T01:04:18.182+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.023s]
+[2025-09-02T01:04:18.201+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.018s]
+[2025-09-02T01:04:18.221+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.019s]
+[2025-09-02T01:04:18.243+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.020s]
+[2025-09-02T01:04:18.285+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.037s]
+[2025-09-02T01:04:18.318+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.031s]
+[2025-09-02T01:04:18.339+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.019s]
+[2025-09-02T01:04:18.359+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.017s]
+[2025-09-02T01:04:18.375+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.015s]
+[2025-09-02T01:04:18.392+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.015s]
+[2025-09-02T01:04:18.407+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.013s]
+[2025-09-02T01:04:18.424+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.016s]
+[2025-09-02T01:04:18.439+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.013s]
+[2025-09-02T01:04:18.456+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.016s]
+[2025-09-02T01:04:18.471+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.013s]
+[2025-09-02T01:04:18.484+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.012s]
+[2025-09-02T01:04:18.500+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.015s]
+[2025-09-02T01:04:18.515+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.014s]
+[2025-09-02T01:04:18.539+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.022s]
+[2025-09-02T01:04:18.560+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.018s]
+[2025-09-02T01:04:18.578+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.016s]
+[2025-09-02T01:04:18.595+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.015s]
+[2025-09-02T01:04:18.609+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.012s]
+[2025-09-02T01:04:18.622+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.012s]
+[2025-09-02T01:04:18.638+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.014s]
+[2025-09-02T01:04:18.652+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.013s]
+[2025-09-02T01:04:18.668+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.014s]
+[2025-09-02T01:04:18.688+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.017s]
+[2025-09-02T01:04:18.702+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.013s]
+[2025-09-02T01:04:18.716+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.012s]
+[2025-09-02T01:04:18.731+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.013s]
+[2025-09-02T01:04:18.748+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.015s]
+[2025-09-02T01:04:18.764+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.015s]
+[2025-09-02T01:04:18.783+0000] {_transport.py:349} INFO - POST http://5bb87ccc996e:9200/jfmindex/_doc [status:201 duration:0.017s]
+[2025-09-02T01:04:18.787+0000] {python.py:240} INFO - Done. Returned value was: JFM - Dados Carregados com Sucesso
+[2025-09-02T01:04:18.828+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-09-02T01:04:18.829+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=JFM_Carrega_Dados_RAG, task_id=tarefa_cria_indice, run_id=scheduled__2025-09-01T00:00:00+00:00, execution_date=20250901T000000, start_date=20250902T010411, end_date=20250902T010418
+[2025-09-02T01:04:18.875+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-09-02T01:04:18.905+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-02T01:04:18.908+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
